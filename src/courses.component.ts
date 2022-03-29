@@ -4,10 +4,10 @@ import { CoursesService } from "./app/courses.service";
 @Component({
     selector: 'courses',
     template: `
-    <input (keyup.enter)="onKeyUp($event)"/>`
+    <input #email (keyup.enter)="onKeyUp(email.value)"/>`
 })
 export class CoursesComponent{
-   onKeyUp($event: any){
-        console.log($event.target.value);
+   onKeyUp(email: any){
+        console.log(email);
    }
 }
