@@ -7,7 +7,8 @@ import { CoursesService } from "./app/courses.service";
         <tr>
             <td [attr.colspan]="colSpan">Cell 1</td>
         </tr>
-    </table>`
+    </table>
+    <button class="btn btn-primary">Submit</button>`
 })
 export class CoursesComponent{
     colSpan = 2;
