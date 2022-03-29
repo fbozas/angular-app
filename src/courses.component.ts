@@ -4,10 +4,10 @@ import { CoursesService } from "./app/courses.service";
 @Component({
     selector: 'courses',
     template: `
-    <button (click)="onSave()">Submit</button>`
+    <button (click)="onSave($event)">Submit</button>`
 })
 export class CoursesComponent{
-    onSave(){
-        console.log("Button was clicked");
+    onSave($event: any){
+        console.log($event);
     }
 }
