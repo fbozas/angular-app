@@ -13,8 +13,7 @@ export class CoursesComponent{
 
     courses: any[] = [];
 
-    constructor(){
-        let service = new CoursesService();
+    constructor(service: CoursesService){      
         this.courses = service.getCourses();
     }
 }
