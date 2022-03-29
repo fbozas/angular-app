@@ -3,17 +3,11 @@ import { CoursesService } from "./app/courses.service";
 
 @Component({
     selector: 'courses',
-    template: `<h2>{{"Title: " + title}}</h2>
-    <ul>
-        <li *ngFor="let course of courses">{{course}}</li>
-    </ul>`
+    template: `<h2>{{title}}</h2>
+    <img [src]="imageUrl">`
 })
 export class CoursesComponent{
     title = "List of Courses";
 
-    courses: any[] = [];
-
-    constructor(service: CoursesService){      
-        this.courses = service.getCourses();
-    }
+    imageUrl = "https://www.fillmurray.com/640/360";
 }
