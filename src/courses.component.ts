@@ -3,18 +3,11 @@ import { CoursesService } from "./app/courses.service";
 
 @Component({
     selector: 'courses',
-    template: `{{course.title | uppercase}} <br>
-    {{course.students | number}} <br>
-    {{course.rating | number: '2.2-3'}} <br>
-    {{course.price | currency: "EUR"}} <br>
-    {{course.releaseDate | date: 'shortDate'}}`
+    template: `{{text}}`
 })
 export class CoursesComponent{
-   course = {
-        title: "The complete Angular course",
-        students: 30123,
-        rating: 4.9745,
-        price: 190.95,
-        releaseDate: new Date(2016,2,3)
-   }
+  text = `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Excepturi ratione reprehenderit nemo numquam ullam eum atque 
+        facere, eius corporis quos totam deserunt mollitia magni ut 
+        temporibus tenetur ad praesentium vel!`;
 }
