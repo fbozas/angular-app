@@ -1,6 +1,23 @@
-<div [hidden]="courses.length == 0">
-    list of courses
-</div>
-<div [hidden]="courses.length > 0">
-    No courses yet
+<ul class="nav nav-pills">
+    <li>
+        <a 
+            [class.active]="viewMode=='map'" 
+            (click)="viewMode='map'" 
+            class="nav-link">
+            Map View
+        </a>
+    </li>
+    <li>
+        <a 
+            [class.active]="viewMode=='list'" 
+            (click)="viewMode='list'" 
+            class="nav-link">
+            List View
+        </a>
+    </li>
+</ul>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'">Map View Content</div>
+    <div *ngSwitchCase="'list'">List View Content</div>
+    <div *ngSwitchDefault>Otherwise</div>
 </div>
