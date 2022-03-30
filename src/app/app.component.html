@@ -1,5 +1,8 @@
+<button (click)="onAdd()">Add</button>
 <ul>
     <li *ngFor="let course of courses; index as i">
         {{i}} {{course.title}}
+        <button (click)="onRemove(course)">Remove</button>
+        <button (click)="onChange(course)">Update</button>
     </li>
 </ul>

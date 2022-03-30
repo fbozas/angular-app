@@ -12,4 +12,17 @@ export class AppComponent {
       {id:3, title: "Python"},
       {id:4, title: "JavaScript"}
   ];
+
+  onAdd(){
+    this.courses.push({id: 5, title:"Another Course"});
+  }
+
+  onRemove(course: any){
+    let index = this.courses.indexOf(course);
+    this.courses.splice(index,1);
+  }
+
+  onChange(course: any){
+    course.title += " updated";
+  }
 }
