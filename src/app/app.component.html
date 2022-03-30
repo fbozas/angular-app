@@ -1,8 +1,8 @@
-<button class="btn"
-    [ngClass]="{
-        'btn-default': !isGoingToGig,
-        'btn-primary': isGoingToGig
-    }" 
-    (click)="onClick()">
-    Going
+<button 
+    [ngStyle]="{
+        'backgroundColor': canSave ? 'blue': 'grey',
+        'color': canSave ? 'white' : 'black',
+        'fontWeight': canSave ? 'bold' : 'normal'
+    }">
+    Save
 </button>

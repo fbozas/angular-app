@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  isGoingToGig = false;
-
-  onClick(){
-    this.isGoingToGig = !this.isGoingToGig;
-  }
+  canSave = true;
 }
