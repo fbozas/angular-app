@@ -1,7 +1,8 @@
-<button (click)="loadCourses()">Load Courses</button>
-<ul>
-    <li *ngFor="let course of courses; index as i">
-        {{course.title}}
-       
-    </li>
-</ul>
+<button class="btn"
+    [ngClass]="{
+        'btn-default': !isGoingToGig,
+        'btn-primary': isGoingToGig
+    }" 
+    (click)="onClick()">
+    Going
+</button>
