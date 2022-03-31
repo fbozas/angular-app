@@ -8,6 +8,9 @@
                 class="form-control">
             <ul class="list-group">
                 <li *ngFor="let post of posts" class="list-group-item">
+                    <button class="btn btn-primary" (click)="updatePost(post)">
+                        Update
+                    </button>
                     {{post.title}}
                 </li>
             </ul>
