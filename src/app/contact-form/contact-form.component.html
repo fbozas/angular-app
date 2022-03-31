@@ -57,6 +57,16 @@
                 <option *ngFor="let method of contactMethods" [value]="method.id">{{method.name}}</option>
         </select>
     </div>
+    <div class="radio" *ngFor="let method of contactMethods">
+        <label>
+            <input 
+                type="radio" 
+                [value]="method.id" 
+                ngModel 
+                name="contactMethod">
+                {{method.name}}
+        </label>
+    </div>
     <button class="btn btn-primary">
         Submit
     </button>
