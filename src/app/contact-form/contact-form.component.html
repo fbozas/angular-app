@@ -36,7 +36,19 @@
 
         </textarea>
     </div>
+    <div class="checkbox">
+        <label for="">
+            <input
+                type="checkbox"
+                ngModel
+                name="isAgreed"
+                #isAgreed="ngModel">
+                I agree with Terms & Conditions
+        </label>
+    </div>
     <button class="btn btn-primary">
         Submit
     </button>
 </form>
+
+<p>{{f.value | json}}</p>
