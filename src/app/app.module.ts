@@ -12,6 +12,11 @@ import { SummaryPipe } from './summary.pipe';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { PostsComponent } from './posts/posts.component';
 import {HttpClientModule} from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import {HttpClientModule} from '@angular/common/http';
     AuthorsComponent,
     SummaryPipe,
     ContactFormComponent,
-    PostsComponent
+    PostsComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    TeamComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
