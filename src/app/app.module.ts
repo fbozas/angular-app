@@ -28,6 +28,7 @@ import {MatInputModule} from '@angular/material/input';
 import {ReactiveFormsModule} from '@angular/forms'; 
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { MatComponentsModule } from './mat-components/mat-components.module';
 
 
 @NgModule({
@@ -75,12 +76,7 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserAnimationsModule,
     NoopAnimationsModule,
     ReactiveFormsModule,
-    MatCheckboxModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatInputModule,
-    MatButtonModule,
-    MatIconModule
+    MatComponentsModule
   ],
   providers: [
     CoursesService,
