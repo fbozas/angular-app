@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,21 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'our-team',
+        component: TeamComponent
+      },
+      {
+        path: 'contact',
+        component: ContactComponent
+      }
+    ])
   ],
   providers: [
     CoursesService,
