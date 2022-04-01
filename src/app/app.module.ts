@@ -22,6 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
 import {MatCheckboxModule} from '@angular/material/checkbox'; 
 import {MatRadioModule} from '@angular/material/radio'; 
+import {MatSelectModule} from '@angular/material/select'; 
+import {NoopAnimationsModule} from '@angular/platform-browser/animations'; 
 
 @NgModule({
   declarations: [
@@ -66,8 +68,10 @@ import {MatRadioModule} from '@angular/material/radio';
       }
     ]),
     BrowserAnimationsModule,
+    NoopAnimationsModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [
     CoursesService,

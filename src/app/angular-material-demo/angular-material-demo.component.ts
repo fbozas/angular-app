@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-material-demo.component.css']
 })
 export class AngularMaterialDemoComponent{
-  isChecked = true;
-
-  onChange($event: any){
-    console.log($event);
-  }
+  colors = [
+    {id: 1, name: "red"},
+    {id: 2, name: "blue"},
+    {id: 3, name: "yellow"},
+  ] 
 }
