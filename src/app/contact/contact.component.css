@@ -1,0 +1,17 @@
+#map{
+    width: 100%;
+    height:500px;
+    filter:grayscale(50%);
+}
+
+.spinner-border.text-dark{
+    width: 3em;
+    height: 3em;
+    display: block;
+    margin: 25% auto;
+}
+
+img#check{
+    display: block;
+    margin: 15% auto;
+}

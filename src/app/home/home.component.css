@@ -1,0 +1,22 @@
+.headerImageFont{
+    color: lightgray;
+}
+
+.bgheader{
+    background-image: url("/assets/img/wineSlide.jpg");
+}
+
+.no-radius{
+    border-radius: 0!important;
+}
+
+.myBox img{
+    max-height: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myBox h4{
+    text-align: center;
+}
