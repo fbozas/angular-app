@@ -1,1 +1,11 @@
-<p>angular-material-demo works!</p>
+<div class="container">
+    <mat-checkbox
+        #showDetails
+        value="2"
+        [checked]="isChecked"
+        (change)="onChange($event)">
+        Subscribe to Newsletter
+    </mat-checkbox>
+
+    <div *ngIf="showDetails.checked">Show Details</div>
+</div>

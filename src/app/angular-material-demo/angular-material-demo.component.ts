@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './angular-material-demo.component.html',
   styleUrls: ['./angular-material-demo.component.css']
 })
-export class AngularMaterialDemoComponent implements OnInit {
+export class AngularMaterialDemoComponent{
+  isChecked = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onChange($event: any){
+    console.log($event);
   }
-
 }
