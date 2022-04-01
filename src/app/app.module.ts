@@ -18,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularMaterialDemoComponent } from './angular-material-demo/angular-material-demo.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     HomeComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    AngularMaterialDemoComponent
   ],
   imports: [
     BrowserModule,
@@ -54,8 +57,13 @@ import { RouterModule } from '@angular/router';
       {
         path: 'posts',
         component: PostsComponent
+      },
+      {
+        path:'angular-material',
+        component: AngularMaterialDemoComponent
       }
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [
     CoursesService,
