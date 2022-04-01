@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-angular-material-demo',
@@ -6,9 +7,5 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./angular-material-demo.component.css']
 })
 export class AngularMaterialDemoComponent{
-  colors = [
-    {id: 1, name: "red"},
-    {id: 2, name: "blue"},
-    {id: 3, name: "yellow"},
-  ] 
+  emailFormControl = new FormControl('',[Validators.required,Validators.email]);
 }
